@@ -1,34 +1,113 @@
-/* Footer */
-.footer {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    font-family: 'Karla', sans-serif;
-    font-size: 14px;
-    border-radius: 10px;
-    text-align: center;
+footer {
+  background-color: #495e57; /* Similar al color de fondo del header */
+  color: #fff;
+  padding: 40px 20px; /* Reducimos padding para no tener demasiado espacio lateral */
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center; /* Centramos todo en la página */
+  align-items: center; /* Alineamos la imagen y las secciones al mismo nivel vertical */
+  gap: 30px; /* Espacio entre la imagen y las secciones */
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  flex: 0 1 260px; /* Evitar que el logo crezca más de lo necesario */
+}
+
+.footer-logo img {
+  width: 260px; /* Tamaño del logo */
+  border-radius: 20px;
+  height: auto;
+}
+
+.footer-sections {
+  display: flex;
+  gap: 25px; /* Reducimos el espacio entre las secciones */
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Alineamos las secciones a la izquierda */
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 180px; /* Aseguramos que las secciones no se hagan demasiado pequeñas */
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #f6f644;
+  font-weight: bold;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links li {
+  font-size: 1.5rem;
+}
+
+.social-links li a {
+  color: #fff;
+}
+
+.social-links li a:hover {
+  color: #f6f644; /* Hover color similar al header */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .footer ul {
-    display: flex;
+
+  .footer-sections {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Reducimos el espacio entre las secciones en pantallas pequeñas */
+  }
+
+  .footer-logo img {
+    width: 350px; /* Ajustamos el tamaño del logo en pantallas pequeñas */
+  }
+
+  .social-links {
     justify-content: center;
-    list-style: none;
-    margin-bottom: 20px;
   }
-  
-  .footer li {
-    margin: 0 20px;
-  }
-  
-  .footer a {
-    color: white;
-    text-decoration: none;
-    font-size: 16pt;
-    font-weight: medium;
-    transition: color 0.3s ease;
-  }
-  
-  .footer a:hover {
-    color: #f4ce14;
-  }
-  
+}

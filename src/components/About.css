@@ -1,60 +1,89 @@
 .about {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-  }
-  
-  .about-text {
-    flex: 1;
-  }
-  
-  .about-text h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .about-text h3 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: #495e57;
-  }
-  
-  .about-text p {
-    font-size: 0.9rem;
-    color: #666;
-    line-height: 1.5;
-  }
-  
-  .about-images {
-    flex: 1;
-    display: flex;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px;
+  background-color: #fff; /* Color de fondo similar al header */
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #f6f644; /* Color similar al del header */
+  font-family: 'Arial', sans-serif;
+}
+
+.about-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-images {
+  flex: 1;
+  position: relative;
+  width: 50%;
+}
+
+.about-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Estilos adicionales para el carrusel */
+.slick-dots {
+  bottom: 10px;
+}
+
+.slick-prev, .slick-next {
+  font-size: 20px;
+  color: #f6f644;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .about {
     flex-direction: column;
-    gap: 20px;
+    text-align: center;
   }
-  
+
+  .about-text {
+    margin-bottom: -20px;
+  }
+
+  .about-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .about-images img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+    width: 150%;
+    max-width: 400px;
   }
-  
-  @media (max-width: 768px) {
-    .about {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .about-images {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  
-    .about-images img {
-      width: 45%;
-    }
-  }
-  
+}
