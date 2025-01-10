@@ -1,0 +1,118 @@
+/* Contenedor principal */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 400px;
+  background-color: #495E57;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-text {
+  max-width: 500px;
+  flex: 1;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.hero-text h1 {
+  color: #f6f644;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-text h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  color: #fff;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.hero-text button {
+  background-color: #f4ce14;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero-text button:hover {
+  background-color: #e7bf00;
+}
+
+/* Imagen del héroe */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px; /* Reduce el padding en pantallas pequeñas */
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-image {
+    margin-top: 20px; /* Espaciado entre el botón y la imagen */
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 80%; /* Imagen más pequeña para pantallas angostas */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .hero-text button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .hero-image img {
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+}

@@ -1,0 +1,60 @@
+.about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .about-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #495e57;
+  }
+  
+  .about-text p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .about-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .about-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-images {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .about-images img {
+      width: 45%;
+    }
+  }
+  

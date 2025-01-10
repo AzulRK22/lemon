@@ -1,0 +1,76 @@
+.specials {
+  padding: 40px 60px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.specials h2 {
+  font-size: 2rem;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.specials-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.special-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 450px; /* Asegura una altura mínima para las tarjetas */
+}
+
+.special-card img {
+  width: 100%; /* Hace que la imagen ocupe todo el ancho de la tarjeta */
+  height: 200px; /* Ajusta la altura de todas las imágenes */
+  object-fit: cover; /* Asegura que las imágenes mantengan sus proporciones sin distorsionarse */
+  border-radius: 8px 8px 0 0;
+}
+
+.special-card h3 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: #333;
+}
+
+.special-card .price {
+  color: #e67e22;
+  font-weight: bold;
+}
+
+.special-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.special-card button {
+  background-color: #495e57;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: auto; /* Empuja el botón al fondo de la tarjeta */
+}
+
+.special-card button:hover {
+  background-color: #344e41;
+}
+
+@media (max-width: 768px) {
+  .specials-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

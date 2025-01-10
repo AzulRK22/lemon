@@ -1,74 +1,106 @@
 /* Contenedor principal del header */
 .header {
-  display: flex;  /* Usamos flexbox */
-  justify-content: space-between; /* Separa el logo y la navegación */
-  align-items: center; /* Centra verticalmente los elementos */
-  padding: 20px 450px; /* Espaciado alrededor */
-  background-color: #fff; /* Fondo blanco */
-  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1); /* Sombra para darle más enfoque */
+  display: flex;
+  justify-content: space-between;  /* Alineación de logo y menú */
+  align-items: center;
+  padding: 20px 400px;
+  background-color: #fff;
+  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1);
+  position: relative; /* Importante para posicionar el icono de hamburguesa */
 }
 
 /* Logo */
 .header-logo img {
-  max-width: 300px;  /* Ajusta el tamaño máximo del logo */
+  max-width: 200px;
   height: auto;
 }
 
 /* Navegación */
 .nav {
-  display: flex; /* Usamos flexbox para la lista de navegación */
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .nav-list {
-  display: flex;  /* Los elementos de la lista estarán en línea */
-  list-style: none;  /* Quita los puntos de la lista */
+  display: flex;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .nav-list li {
-  margin-right: 20px;  /* Espaciado entre los enlaces */
+  margin-right: 20px;
 }
 
 .nav-list li:last-child {
-  margin-right: 0; /* Sin margen a la derecha del último elemento */
+  margin-right: 0;
 }
 
 .nav-list a {
-  text-decoration: none; /* Elimina el subrayado */
-  color: #333; /* Color de texto */
+  text-decoration: none;
+  color: #333;
   font-weight: bold;
-  transition: color 0.3s ease;  /* Efecto suave al cambiar color */
+  transition: color 0.3s ease;
 }
 
 .nav-list a:hover {
-  color: #5baf71;  /* Color al pasar el ratón */
+  color: #5baf71;
+}
+
+/* Icono de hamburguesa */
+.hamburger-icon {
+  display: none;  /* Ocultar icono por defecto en pantallas grandes */
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;  /* Posicionar en la parte superior derecha */
+  top: 20px;
+  right: 20px;
+}
+
+.hamburger-icon img {
+  width: 30px;
+  height: auto;
 }
 
 /* Responsividad */
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;  /* Cambia la dirección del flex para apilar los elementos */
-    align-items: center;  /* Centra todos los elementos */
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
   }
 
   .nav {
-    margin-top: 20px;  /* Añade margen entre el logo y el menú en pantallas pequeñas */
-    width: 100%;  /* Asegura que la barra de navegación ocupe el 100% de la pantalla */
-    justify-content: center; /* Centra los enlaces */
+    width: 100%;
+    display: none;  /* Ocultar menú por defecto */
+    justify-content: center;
+  }
+
+  .nav.active {
+    display: block;  /* Mostrar el menú cuando el estado `active` esté activo */
+    background-color: #fff;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
   }
 
   .nav-list {
-    flex-direction: column;  /* Apila los enlaces verticalmente */
-    width: 100%;  /* Ocupa el 100% del ancho */
-    align-items: center;  /* Centra los enlaces */
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
   }
 
   .nav-list li {
-    margin-bottom: 15px;  /* Añade espacio entre los elementos en pantallas pequeñas */
+    margin-bottom: 15px;
   }
 
   .nav-list li:last-child {
-    margin-bottom: 0; /* Sin margen al final */
+    margin-bottom: 0;
+  }
+
+  /* Mostrar el icono de hamburguesa en pantallas pequeñas */
+  .hamburger-icon {
+    display: block;  /* Mostrar el icono en pantallas pequeñas */
   }
 }
