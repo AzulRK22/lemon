@@ -1,0 +1,32 @@
+.main {
+  font-family: 'Karla', sans-serif;
+  padding: 20px;
+}
+
+.hero {
+  background-color: #495E57;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-family: 'Markazi Text', serif;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.cta-button {
+  background-color: #F4CE14;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.specials {
+  margin-top: 40px;
+}
