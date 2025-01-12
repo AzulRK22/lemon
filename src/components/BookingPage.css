@@ -1,0 +1,27 @@
+.booking-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0; /* Elimina márgenes extra */
+    padding: 20px;
+    margin-top: -40px;
+    margin-bottom: -50px;
+    box-sizing: border-box; /* Para evitar desbordamientos */
+    background-color: #f8f8f8; /* Fondo claro */
+  }
+
+  .booking-page h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #495e57;
+    margin-top: -10px;
+    margin: 0; /* Evita márgenes adicionales */
+  }
+
+  @media (max-width: 768px) {
+    .booking-page h1 {
+      font-size: 1.5rem; /* Ajusta el tamaño del texto en móviles */
+    }
+  }
