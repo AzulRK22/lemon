@@ -48,7 +48,7 @@ Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
     Esto abrirá la aplicación en http://localhost:3000.
 
 
-## Estructura del Proyecto
+## Estructura del proyecto
 
 El proyecto tiene la siguiente estructura:
 
@@ -74,19 +74,12 @@ lemon/
 
 ## Screenshots
 
-### Home
-![Home Screenshot](images/home.png)
-### Reservations
-![Home Screenshot](images/home.png)
+   ### Home
+   ![Home Screenshot](images/home.png)
+   ### Reservations
+   ![Home Screenshot](images/home.png)
 
-## Pruebas
-
-El proyecto incluye pruebas unitarias utilizando **Jest** y **React Testing Library**. Para ejecutar las pruebas, usa el siguiente comando:
-
-```bash
-npm test
-
-## Contribuciones
+## Contrubuciones
 
 Las contribuciones son bienvenidas. Si encuentras algún error o tienes alguna mejora en mente, por favor sigue estos pasos para colaborar en el proyecto:
 
