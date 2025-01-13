@@ -1,0 +1,49 @@
+/* src/components/ConfirmedBooking.css */
+.confirmed-booking-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #4CAF50;
+    text-align: center;
+  }
+  
+  .booking-details {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  strong {
+    color: #333;
+  }
+  
+  .back-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .back-button:hover {
+    background-color: #45a049;
+  }
+  

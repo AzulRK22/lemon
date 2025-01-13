@@ -17,7 +17,7 @@
   
   .booking-form-container input,
   .booking-form-container select,
-  .booking-form-container input[type="submit"] {
+  .booking-form-container button {
     width: 100%; /* Asegura que todos los elementos tengan el mismo ancho */
     padding: 12px;
     border: 2px solid #f4ce14;
@@ -42,7 +42,7 @@
     box-shadow: 0 0 8px #ffe65b;
   }
   
-  .booking-form-container input[type="submit"] {
+  .booking-form-container button {
     background-color: #f4ce14;
     color: #495e57;
     font-weight: bold;
@@ -53,12 +53,12 @@
     transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
-  .booking-form-container input[type="submit"]:hover {
+  .booking-form-container button:hover {
     background-color: #ffe65b;
     transform: scale(1.05);
   }
   
-  .booking-form-container input[type="submit"]:active {
+  .booking-form-container button:active {
     transform: scale(0.98);
   }
   
@@ -82,12 +82,12 @@
   
     .booking-form-container input,
     .booking-form-container select,
-    .booking-form-container input[type="submit"] {
+    .booking-form-container button {
       font-size: 0.9rem; /* Reduce el tamaño de fuente */
       padding: 10px; /* Ajusta el padding */
     }
   
-    .booking-form-container input[type="submit"] {
+    .booking-form-container button {
       font-size: 1rem; /* Mantén el botón legible */
       padding: 15px;
     }
