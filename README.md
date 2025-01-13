@@ -17,6 +17,21 @@ Lemon es una aplicación web para un restaurante que permite a los usuarios nave
 
 - **Home**: Página de bienvenida con enlaces a las secciones disponibles.
 - **Reservations**: Los usuarios pueden realizar una reserva seleccionando la fecha, hora, el número de personas y la ocasión.
+  
+## Screenshots
+
+   ### Home
+   ![Home Screenshot](src/images/H1.png)
+   ![Home Screenshot](src/images/H2.png)
+   ![Home Screenshot](src/images/H3.png)
+   ![Home Screenshot](src/images/H4.png)
+   ![Home Screenshot](src/images/H5.png)
+   ### Reservations
+   ![Reservations Screenshot](src/images/R1.png)
+   ![Reservations Screenshot](src/images/R2.png)
+   ![Reservations Screenshot](src/images/R3.png)
+   ### Reservations CONFIRMED
+   ![ReservationsC Screenshot](src/images/RC.png)
 
 ## Tecnologías
 
@@ -50,42 +65,27 @@ Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
 
 ## Estructura del proyecto
 
-El proyecto tiene la siguiente estructura:
-
-lemon/
-├── public/
-│   └── index.html            # Plantilla HTML principal
-├── src/
-│   ├── components/
-│   │   ├── Header.js         # Barra de navegación
-│   │   ├── Home.js           # Componente de la página principal
-│   │   ├── Menu.js           # Componente del menú (pendiente)
-│   │   ├── About.js          # Componente de la sección 'About' (pendiente)
-│   │   ├── Reservations.js   # Componente de reservas (completado)
-│   │   ├── Login.js          # Componente de inicio de sesión (pendiente)
-│   │   └── OrderOnline.js    # Componente de pedidos en línea (pendiente)
-│   ├── api.js                # Funciones para interactuar con la API (por ejemplo, obtener horarios de reserva)
-│   ├── App.js                # Componente principal que maneja las rutas
-│   ├── index.js              # Punto de entrada principal
-│   ├── setupTests.js         # Configuración de las pruebas
-├── package.json
-├── README.md
-└── .gitignore
-
-## Screenshots
-
-   ### Home
-   ![Home Screenshot](src/images/H1.png)
-   ![Home Screenshot](src/images/H2.png)
-   ![Home Screenshot](src/images/H3.png)
-   ![Home Screenshot](src/images/H4.png)
-   ![Home Screenshot](src/images/H5.png)
-   ### Reservations
-   ![Reservations Screenshot](src/images/R1.png)
-   ![Reservations Screenshot](src/images/R2.png)
-   ![Reservations Screenshot](src/images/R3.png)
-   ### Reservations CONFIRMED
-   ![ReservationsC Screenshot](src/images/RC.png)
+   El proyecto tiene la siguiente estructura:
+   
+   lemon/
+   ├── public/
+   │   └── index.html            # Plantilla HTML principal
+   ├── src/
+   │   ├── components/
+   │   │   ├── Header.js         # Barra de navegación
+   │   │   ├── Home.js           # Componente de la página principal
+   │   │   ├── Menu.js           # Componente del menú (pendiente)
+   │   │   ├── About.js          # Componente de la sección 'About' (pendiente)
+   │   │   ├── Reservations.js   # Componente de reservas (completado)
+   │   │   ├── Login.js          # Componente de inicio de sesión (pendiente)
+   │   │   └── OrderOnline.js    # Componente de pedidos en línea (pendiente)
+   │   ├── api.js                # Funciones para interactuar con la API (por ejemplo, obtener horarios de reserva)
+   │   ├── App.js                # Componente principal que maneja las rutas
+   │   ├── index.js              # Punto de entrada principal
+   │   ├── setupTests.js         # Configuración de las pruebas
+   ├── package.json
+   ├── README.md
+   └── .gitignore
 
 ## Contrubuciones
 
