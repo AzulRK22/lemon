@@ -75,7 +75,7 @@ lemon/
 ## Screenshots
 
    ### Home
-   ![Home Screenshot](images/H1.png)
+   ![Home Screenshot](src/images/H1.png)
    ![Home Screenshot](images/H2.png)
    ![Home Screenshot](images/H3.png)
    ![Home Screenshot](images/H4.png)
