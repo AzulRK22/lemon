@@ -75,9 +75,17 @@ lemon/
 ## Screenshots
 
    ### Home
-   ![Home Screenshot](images/home.png)
+   ![Home Screenshot](images/H1.png)
+   ![Home Screenshot](images/H2.png)
+   ![Home Screenshot](images/H3.png)
+   ![Home Screenshot](images/H4.png)
+   ![Home Screenshot](images/H5.png)
    ### Reservations
-   ![Home Screenshot](images/home.png)
+   ![Reservations Screenshot](images/R1.png)
+   ![Reservations Screenshot](images/R2.png)
+   ![Reservations Screenshot](images/R3.png)
+   ### Reservations CONFIRMED
+   ![ReservationsC Screenshot](images/RC.png)
 
 ## Contrubuciones
 
